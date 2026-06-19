@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Commerce Coaching Websites — Three Brands</title>
+  <meta name="description" content="Three distinct commerce coaching institute websites: Soni Classes Commerce, Reliable Classes, and Parab Commerce Classes." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231A2B4A'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' fill='%23C9A227' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #18202e;
+      --muted: #5b6577;
+      --line: #e4e2dc;
+      --bg: #f6f4ee;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+    header.hero { padding: 88px 0 40px; }
+    .eyebrow {
+      font-size: 0.74rem; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--muted); font-weight: 600; margin-bottom: 18px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .eyebrow::before { content: ""; width: 34px; height: 1px; background: var(--muted); }
+    h1 {
+      font-family: "Newsreader", Georgia, serif; font-weight: 600;
+      font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.08;
+      letter-spacing: -0.01em; max-width: 16ch;
+    }
+    .lede { margin-top: 20px; max-width: 56ch; color: var(--muted); font-size: 1.05rem; }
+    .grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+      padding: 28px 0 80px;
+    }
+    @media (max-width: 880px) { .grid { grid-template-columns: 1fr; max-width: 460px; } }
+    .card {
+      background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+      overflow: hidden; display: flex; flex-direction: column;
+      text-decoration: none; color: inherit;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+      box-shadow: 0 1px 2px rgba(20,30,50,.04);
+    }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 18px 40px rgba(20,30,50,.13); }
+    .card:focus-visible { outline: 3px solid #888; outline-offset: 3px; }
+    .swatch { height: 120px; display: flex; align-items: flex-end; padding: 16px; position: relative; }
+    .swatch .mark {
+      font-family: "Newsreader", Georgia, serif; font-size: 1.5rem; font-weight: 600;
+      width: 46px; height: 46px; border-radius: 8px; display: grid; place-items: center;
+    }
+    .soni  .swatch { background: #1A2B4A; }
+    .soni  .mark { background: #C9A227; color: #1A2B4A; }
+    .reliable .swatch { background: #0E7C66; }
+    .reliable .mark { background: #ffffff; color: #0E7C66; font-family: "Inter"; font-weight: 700; }
+    .parab .swatch { background: #8C2F2A; }
+    .parab .mark { background: #E8A23D; color: #8C2F2A; border-radius: 12px; }
+    .body { padding: 20px 20px 24px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+    .body h2 { font-family: "Newsreader", Georgia, serif; font-weight: 600; font-size: 1.3rem; line-height: 1.2; }
+    .body p { color: var(--muted); font-size: 0.92rem; }
+    .tag { margin-top: auto; padding-top: 14px; font-size: 0.8rem; font-weight: 600; color: var(--ink); display: inline-flex; align-items: center; gap: 6px; }
+    .tag svg { transition: transform .25s ease; }
+    .card:hover .tag svg { transform: translateX(4px); }
+    footer { border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Commerce Coaching · Three Brands</p>
+      <h1>Three institutes, three distinct identities.</h1>
+      <p class="lede">Each site was designed around its own brand promise — not a shared template. Pick one to explore.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="grid">
+      <a class="card soni" href="soni-classes/index.html">
+        <div class="swatch"><span class="mark">SC</span></div>
+        <div class="body">
+          <h2>Soni Classes Commerce</h2>
+          <p>Established academic prestige — navy &amp; gold, editorial serif. For 11th/12th Commerce &amp; CA Foundation.</p>
+          <span class="tag">Visit site
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a class="card reliable" href="reliable-classes/index.html">
+        <div class="swatch"><span class="mark">R</span></div>
+        <div class="body">
+          <h2>Reliable Classes</h2>
+          <p>Results-driven and data-forward — emerald &amp; amber, with a results ledger and live progress charts.</p>
+          <span class="tag">Visit site
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a class="card parab" href="parab-classes/index.html">
+        <div class="swatch"><span class="mark">P</span></div>
+        <div class="body">
+          <h2>Parab Commerce Classes</h2>
+          <p>Founder-led mentorship — maroon &amp; marigold, warm notebook motifs and limited-seat batches.</p>
+          <span class="tag">Visit site
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">Demo websites · contact details are placeholders. Built as static HTML/CSS/JS.</div>
+  </footer>
+</body>
+</html>
